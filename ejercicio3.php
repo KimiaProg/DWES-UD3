@@ -32,7 +32,7 @@
             break;
         case 7:
             echo "domingo";
-            break;
+            break; 
     }
     ?>
 </body>

@@ -7,13 +7,16 @@
     <title>Document</title>
 </head>
 <body>
-    <?php
-        $v=5;
-        $cont=1;
-        while($cont<=10){
+    <?php  
+          $v=5;
+          $cont=1;
+          do{
             echo $v,"*",$cont,"=",$v*$cont, "<br>";
-            $cont++;
-        }
+              $cont++;
+          }while($cont<=10);
+    
+    
+    
     ?>
 </body>
 </html>
