@@ -15,11 +15,14 @@
     $edad = date("Y") - date("Y", $nacimiento);
     $difMes = date('m') - date('m', $nacimiento);
     $difDia = date('d') - date('d', $nacimiento);
-    if($edad==18 || $edad==65){
-        if ($difMes < 0 || $difDia < 0) {
+        if($difMes==0){
+            if($difDia<0){
+                $edad--;
+            }
+        }else if ($difMes < 0) {
             $edad--;
         }
-    }
+    
 
 
 
