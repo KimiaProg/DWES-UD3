@@ -11,20 +11,18 @@
 <body>
     <?php
 
-    $nacimiento = strtotime("2003-10-05");
+    $nacimiento = strtotime("1500-11-05");
     $edad = date("Y") - date("Y", $nacimiento);
     $difMes = date('m') - date('m', $nacimiento);
     $difDia = date('d') - date('d', $nacimiento);
-        if($difMes==0){
-            if($difDia<0){
-                $edad--;
-            }
-        }else if ($difMes < 0) {
+    if($difMes==0){
+        if($difDia<0){
             $edad--;
         }
+    }else if ($difMes < 0) {
+        $edad--;
+    }
     
-
-
 
     if ($edad >= 18 && $edad < 65) {
         echo "Puedes entrar , Eres mayor de edad";
