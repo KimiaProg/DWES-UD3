@@ -8,7 +8,7 @@
 </head>
 <body>
     <?php
-    $nacimiento="2020-01-05";
+    $nacimiento="2003-10-05";
     $fecha= new DateTime($nacimiento);
     $anio= $fecha->format('Y');
 
@@ -30,6 +30,7 @@
     $fecha= date($nacimiento);
     $actual= date('Y-m-d');
     $edad= $actual- $fecha;
+    echo $edad;
 
     if($edad>= 18 && $edad<65){
         echo "Puedes entrar , Eres mayor de edad";
