@@ -11,17 +11,10 @@
 <body>
     <?php
 
-    $nacimiento = strtotime("1500-11-05");
-    $edad = date("Y") - date("Y", $nacimiento);
-    $difMes = date('m') - date('m', $nacimiento);
-    $difDia = date('d') - date('d', $nacimiento);
-    if($difMes==0){
-        if($difDia<0){
-            $edad--;
-        }
-    }else if ($difMes < 0) {
-        $edad--;
-    }
+    $fecha_nacimiento = new DateTime("2003-10-06");
+    $hoy = new DateTime();
+    $edadF = $hoy->diff($fecha_nacimiento);
+    $edad= $edadF->y;
     
 
     if ($edad >= 18 && $edad < 65) {
