@@ -12,9 +12,9 @@
     <table border="1">
         <?php
         $matriz = [];
-        $matriz[] = array("Nombre" => "champu", "precio" => 12.2, "stock" => 2, "identificador" => "1254");
-        $matriz[] = array("Nombre" => "zumo", "precio" => 13.2, "stock" => 10, "identificador" => "1854");
-        $matriz[] = array("Nombre" => "jabon", "precio" => 14.2, "stock" => 5, "identificador" => "1264");
+        $matriz[] = array("Nombre" => "Champu", "precio" => 12.2, "stock" => 2, "identificador" => "1254");
+        $matriz[] = array("Nombre" => "Zumo", "precio" => 13.2, "stock" => 10, "identificador" => "1854");
+        $matriz[] = array("Nombre" => "Jabón", "precio" => 14.2, "stock" => 5, "identificador" => "1264");
 
         var_dump($matriz);
         echo "<br>";
@@ -22,8 +22,6 @@
         foreach ($matriz as $key => $value) {
             echo "<tr>";
             echo "<td>" . $matriz[$key]["Nombre"] . "</td>"  . "<td>" . $matriz[$key]["precio"] . "</td>" . "<td>" . $matriz[$key]["stock"] . "</td>" .  "<td>" . $matriz[$key]["identificador"] . "</td>";
-            print_r($matriz[$key]);
-            echo "<br>";
             echo "</tr>";
         }
 
