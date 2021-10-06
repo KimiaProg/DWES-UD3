@@ -10,40 +10,38 @@
 
 <body>
     <?php
-    $meses = [];
-    $meses[] = "Enero";
-    $meses[] = "Febrero";
-    $meses[] = "Marzo";
-    var_dump($meses);
+    $Meses = [];
+    $Meses[] = "Enero";
+    $Meses[] = "Febrero";
+    $Meses[] = "Marzo";
+    var_dump($Meses);
     echo "<br>";
-    count($meses);
-    echo "<br>";
-
-    $meses[] = 7;
-    $meses[] = "Abril";
-    $meses[] = true;
-    $meses[] = "Junio";
-    var_dump($meses);
+    echo "El array contiene: ".count($Meses);
     echo "<br>";
 
-    echo count($meses);
+    $Meses[] = 7;
+    $Meses[] = "Abril";
+    $Meses[] = true;
+    $Meses[] = "Junio";
+    var_dump($Meses);
     echo "<br>";
 
-    unset($meses[3]);
-    var_dump($meses);
-
+    echo "El array contiene: ". count($Meses);
     echo "<br>";
 
-    $meses[5] = "May";
-    $meses[] = "Julio";
-    $meses[] = "Agosto";
-    $meses[] = "Septiembre";
-    $meses[] = "Octubre";
-    $meses[] = "Novimebre";
-    $meses[] = "Diciembre";
-    var_dump($meses);
+    unset($Meses[3]);
+    var_dump($Meses);
     echo "<br>";
 
+    $Meses[5] = "May";
+    $Meses[] = "Julio";
+    $Meses[] = "Agosto";
+    $Meses[] = "Septiembre";
+    $Meses[] = "Octubre";
+    $Meses[] = "Novimebre";
+    $Meses[] = "Diciembre";
+    var_dump($Meses);
+    echo "<br>";
 
 
 
