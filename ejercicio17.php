@@ -7,12 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-    <?php  
-    include 'funciones.inc.php';
-    include_once 'funciones.inc.php';
-    require 'funciones.inc.php';
-    echo multiplicacion(3,7);   
     
-    ?>
 </body>
 </html>
