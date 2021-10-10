@@ -10,7 +10,7 @@
         $usu = strip_tags($usu);
         $usu = stripslashes($usu);
         $usu = htmlspecialchars($usu);
-        if (preg_match('/[a-zA-Z]{6}[0-9]{1}[A-Z]{1,}/', $usu)) {
+        if (preg_match('/\w{8,}/', $usu)) {
             echo $usu;
         } else {
             echo "ErrrUsuario";
