@@ -4,7 +4,7 @@
     $ap = "";
     $dir = "";
     $est = "";
-    $info = "";
+    $info = "Escribe aquí tu texto...";
     $ins = "";
     $errorNom = "";
     $errorAp = "";
@@ -24,40 +24,37 @@
 
         function seguro($valor)
         {
-            $ret = false;
-            if (!empty($valor)) {
-                $valor = strip_tags($valor);
-                $valor = stripslashes($valor);
-                $valor = htmlspecialchars($valor);
-                $ret = true;
-            }
-            return $ret;
+            $valor = strip_tags($valor);
+            $valor = stripslashes($valor);
+            $valor = htmlspecialchars($valor);
+            return $valor;
         }
-
-        if (seguro($nom) == false) {
-            $errorNom = "Error";
-        }
-        if (seguro($ap) == false) {
-            $errorAp = "Error";
-        }
-        if (seguro($dir) == false) {
-            $errorDir = "Error";
-        }
-        if (seguro($est) == false) {
-            $errorEst = "Error";
-        }
-        if (seguro($info) == false) {
-            $errorInfo = "Error";
-        }
-        if (!preg_match('/^INS/', $ins)) {
-            $errorIns = "Error";
-        }
-
-        var_dump($_POST["check"]);
-
         
-    }else{
-        $check=[""];
-
+        $info = seguro($info);
+        if (empty($nom)) {
+            $errorNom = "Error";
+        } else {
+            $nom = seguro($nom);
+        }
+        if (empty($ap)) {
+            $errorAp = "Error";
+        } else {
+            $ap = seguro($ap);
+        }
+        if (empty($dir)) {
+            $errorDir = "Error";
+        } else {
+            $dir = seguro($dir);
+        }
+        if (empty($est)) {
+            $errorEst = "Error";
+        } else {
+            $est = seguro($est);
+        }
+        if (!preg_match('/^IES/i', seguro($ins)) || empty($ins)) {
+            $errorIns = "Error";
+        } else {
+            $ins = seguro($ins);
+        }
     }
     ?>  
