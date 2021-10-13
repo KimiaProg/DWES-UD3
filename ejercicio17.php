@@ -64,13 +64,13 @@
         </p>
         <p>
 
-            <input type="checkbox" name="check[]" value="historia" checked="<?php if (in_array("historia", $check)){ echo "checked";}else{ echo "";} ?>"/>
+            <input type="checkbox" name="check[]" value="historia" <?php if (in_array("historia", $check)){ echo "checked";}else{ echo "";} ?>/>
             <label for="historia">historia</label>
-            <input type="checkbox" name="check[]" value="geografia" checked="<?php if (in_array("geografia", $check)){ echo "checked";}else{ echo "";} ?>"/>
+            <input type="checkbox" name="check[]" value="geografia" <?php if (in_array("geografia", $check)){ echo "checked";}else{ echo "";} ?>/>
             <label for="geografia">geografia</label>
-            <input type="checkbox" name="check[]" value="lengua" checked="<?php if (in_array("lengua", $check)){ echo "checked";}else{ echo "";} ?>"/>
+            <input type="checkbox" name="check[]" value="lengua" <?php if (in_array("lengua", $check)){ echo "checked";}else{ echo "";} ?>/>
             <label for="lengua">lengua</label>
-            <input type="checkbox" name="check[]" value="matematicas" checked="<?php if (in_array("matematicas", $check)){ echo "checked";}else{ echo "";} ?>"/>
+            <input type="checkbox" name="check[]" value="matematicas" <?php if (in_array("matematicas", $check)){ echo "checked";}else{ echo "";} ?>/>
             <label for="matematicas">matematicas</label>
         </p>
         <p>

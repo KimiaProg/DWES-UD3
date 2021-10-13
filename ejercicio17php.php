@@ -56,5 +56,8 @@
         var_dump($_POST["check"]);
 
         
+    }else{
+        $check=[""];
+
     }
     ?>  
