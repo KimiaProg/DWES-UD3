@@ -14,6 +14,9 @@
     <?php
     $ErrorUsu = "";
     $ErrorCont = "";
+    $usu="";
+    $cont="";
+    $check=null;
 
     if ($_SERVER["REQUEST_METHOD"] == "POST") {
         
@@ -43,12 +46,12 @@
     <form action="<?php echo htmlentities($_SERVER['PHP_SELF']); ?>" method="POST">
         <p>
             <label for="usuario">Usuario</label>
-            <input type="text" name="usuario" />
+            <input type="text" name="usuario" value="<?php echo $usu ?>" />
             <span style="color:red"><?php echo $ErrorUsu; ?></span>
         </p>
         <p>
             <label for="contrasenya">Contraseña</label>
-            <input type="password" name="contrasenya" />
+            <input type="password" name="contrasenya" value="<?php echo $cont ?>" />
             <span style="color:red"><?php echo $ErrorCont; ?></span>
         </p>
         <p>
